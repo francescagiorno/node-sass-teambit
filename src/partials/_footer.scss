@@ -1,0 +1,45 @@
+footer {
+    @include flex-between;
+    @include desktop-margin;
+    margin-top: 50px;
+    border-bottom: 1px solid $primary-color;
+    .logo{
+        @include flex-start;
+        align-items: flex-start;
+        width:25%;
+        img{
+            margin-right: 10px;
+            width:35%;
+        }
+        p{
+            line-height: 25px;
+        }
+    }
+    span {
+        @include footer-link;
+    }
+    ul{
+       list-style: none;
+    }
+    .lists{
+        @include flex-between;
+        width:60%;
+        li{
+            width:20%;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        .list{
+            li{
+                @include footer-secondary-text;
+                margin-bottom: 10px;
+                width:100%;
+            }
+        }
+    }
+    p{
+        @include footer-primary-text;
+    }
+
+}

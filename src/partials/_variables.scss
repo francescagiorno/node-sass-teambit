@@ -1,0 +1,108 @@
+$primary-color : #7f14d4;
+$secondary-color:  #0414b3;
+$link-blue: #0e14ee;
+$third-color: #3e14e9;
+
+$font-stack: 'Roboto', sans-serif;
+
+@mixin w-50{
+    width:50%;
+    height: 100%;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin column-flex-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin desktop-margin {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+@mixin navbar-text{
+    color: $primary-color;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@mixin hero-title {
+    color: $primary-color;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+@mixin hero-primary-text {
+    color: $primary-color;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@mixin hero-secondary-text {
+    color: $primary-color;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+@mixin link-text{
+    color:$link-blue;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@mixin section-title{
+    color:$primary-color;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+@mixin section-primary-text{
+    color:$primary-color;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@mixin section-secondary-text{
+    color:$primary-color;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+@mixin footer-primary-text{
+    color: $primary-color;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@mixin footer-secondary-text{
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@mixin footer-link{
+    color: $link-blue;
+    font-size: 1rem;
+    font-weight: 600;
+}

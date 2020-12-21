@@ -1,0 +1,156 @@
+.process, .experience {
+    background-color: $secondary-color;
+    padding-top: 50px;
+}
+
+.feedback {
+    @include flex-column;
+    @include desktop-margin;
+    margin-bottom: 50px;
+}
+
+.mixed {
+    @include flex-column;
+    @include desktop-margin;
+    align-items: center;
+    text-align: center;
+    .title{
+        @include section-title;
+        &:nth-of-type(2){
+            padding:50px 250px 0 250px;
+            line-height: 30px;
+        }
+        margin-bottom: 50px;;
+    }
+    .trio {
+        width:100%;
+        @include flex-between;
+        align-items: baseline;
+        .card{
+            @include flex-column;
+            align-items: center;
+            .text{
+                @include section-secondary-text;
+                margin-top: 10px;
+            }
+            img{
+                &:nth-of-type(1){
+                    width:150px;
+                }
+
+
+            }
+            #cat {
+                width:60px;
+            }
+        }
+    }
+    .rabbit{
+        width:20%;
+        margin: 50px ;
+    }
+    hr{
+        background-color:$primary-color;
+        width:100%;
+        height: 1px;
+        border: none;
+    }
+}
+
+.row {
+    @include flex-start;
+    margin-top: 50px;
+    & > img {
+        @include w-50;
+    }
+    [class*="text-"]{
+        width:30%;
+        .title{
+            @include section-title;
+            margin-bottom: 40px;
+        }
+        .subtitle{
+            @include section-primary-text;
+            margin-bottom: 20px;
+        }
+        .link {
+            @include link-text;
+            margin-bottom: 20px;
+        }
+        img{
+            width:400px;
+        }
+    }
+    &:nth-of-type(1),&:nth-of-type(3){
+        @include flex-start;
+    }
+    &:nth-of-type(2),&:nth-of-type(4){
+        @include flex-end;
+    }
+}
+
+.experience{
+    .text{
+        @include flex-column;
+        @include desktop-margin;
+        align-items: center;
+        padding: 0 20%;
+        .title{
+            @include section-title;
+        }
+        .message{
+            background-color: white;
+            padding:20px;
+            margin : 50px 0 40px 0;
+            border: 1px solid $third-color;
+            border-radius: 10px;
+            .letters{
+                @include section-primary-text;
+            }
+            .endings{
+                @include flex-start;
+                align-items: center;
+                img{
+                    margin-right: 10px;;
+                }
+                .names{
+                    @include link-text;
+                }
+                .job{
+                    @include section-primary-text;
+                }
+            }
+        }
+
+
+    }
+    .buttons-box{
+            @include flex-start;
+            align-items: center;
+            margin-bottom: 10px;
+            button{
+                @include flex-between;
+                align-items: center;
+                color: white ;
+                font-size: 1rem;
+                font-weight: 600;
+                border: 1px solid $primary-color;
+                border-radius: 3px;
+                padding : 5px;
+                background-color:$primary-color;
+                img{
+                    width: 1.3rem;
+                    margin-right: 5px;
+                }
+            }
+            p{
+                @include section-secondary-text;
+                margin:5px;
+            }
+
+    }
+    .info{
+        @include section-secondary-text;
+        margin-bottom: 50px;;
+    }
+}
